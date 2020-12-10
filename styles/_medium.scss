@@ -1,0 +1,62 @@
+@import './variables';
+
+.nav-sm {
+    display: none;
+}
+
+main {
+    section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+
+.nav-md {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    flex-direction: column;
+    background: $prime;
+    border-bottom: solid 1px $third;
+    a {
+        width: 100%;
+        height: 50px;
+        border-bottom: solid 1px $third;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: $third;
+        font-family: $font;
+    }
+}
+
+.main-content {
+    width: 80%;
+    margin: 0px 10px 40px 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "h1 h1 h1"
+        "ipad-h3 ipad-h3 ipad-img"
+        "ipad-p ipad-p ipad-img"
+        "sony-img sony-h3 sony-h3"
+        "sony-img sony-p sony-p"
+        "surface-h3 surface-h3 surface-img"
+        "surface-p surface-p surface-img"
+    ;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    h3, p {
+        margin: 0;
+    }
+}
+
+#nav-bottom {
+    display: none;
+}
